@@ -475,7 +475,7 @@ to {background: url("bg4.jpg");}
     padding-left: 50px;
     font-size: 1.1rem;
     line-height: 1.5;
-    border-left: 1px solid gray;
+    /*border-left: 1px solid gray;*/
     color: rgb(99, 95, 95);
     margin-bottom: 10px;
 }
@@ -799,9 +799,6 @@ to {background: url("bg4.jpg");}
 }
 
 @media (max-width:800px){
-    #bg{
-        background: linear-gradient(rgba(153, 153, 153, 0),rgba(0, 0, 0, 0.514)),url('../media/bg3.jpg')no-repeat center center/cover;
-    }
     #home .home-container h1{
         font-size: 4rem;
     }
@@ -811,8 +808,30 @@ to {background: url("bg4.jpg");}
     #about .container .about-container .heading2, #services .container .services-container .heading2, #works .container .works-container .heading2{
         font-size: 3.3rem;
     }
+    #about .container .about-container .heading2{
+        margin-bottom: 20px !important;
+    }
     #about .container .about-container p, #services .container .services-container p {
         font-size: 1.3rem;
+    }
+    #about .container .about-container{
+        margin-bottom: 30px !important;
+    }
+    #about .container .card-container{
+        margin-left: 30px !important;
+    }
+    #about .container .card-container .right{
+        width: 90% !important;
+        margin-bottom: 20px;
+    }
+    #about .container .card-container .left{
+        width: 90% !important;  
+    }
+    #about .container .card-container .left p{
+        padding-left: 0 !important;
+    }
+    #about .container .card-container .left h2{
+        padding-left: 0 !important;
     }
     #about .container .card-container .card{
         width: 80vw;
@@ -1098,10 +1117,6 @@ to {background: url("bg4.jpg");}
 }
 
 @media /*,(max-width:400px)*/(max-width:320px){
-    #bg{
-        background: linear-gradient(rgba(153, 153, 153, 0),rgba(0, 0, 0, 0.514)),url('/media/bg3.jpg')no-repeat center center/cover;
-        
-    }
     #home{
         background-color: rgb(0 0 0 / 13%);
         height: 910px;
