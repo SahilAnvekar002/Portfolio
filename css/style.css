@@ -32,10 +32,9 @@ html{
 }
 
 #navbar .logo img{
-    width: 60px;
-    height: 50px;
-    filter: brightness(0) invert(1);
-    margin: 5px;
+    width: 30px;
+    height: 30px;
+    margin: 5px 20px;
 }
 
 #navbar .logo span{
@@ -454,8 +453,21 @@ to {background: url("bg4.jpg");}
     align-items: center;
     margin-bottom: 20px;
 }
+#about .container .card-container .card .title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
 #about .container .card-container .left .title span{
+    padding: 10px 17px;
+    color: white;
+    border-radius: 50%;
+    background-color: rgb(64, 201, 166);
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+#about .container .card-container .card .title span{
     padding: 10px 17px;
     color: white;
     border-radius: 50%;
@@ -469,6 +481,11 @@ to {background: url("bg4.jpg");}
     padding-left: 50px;
     font-size: 1.7rem;
 }
+#about .container .card-container .card .title h2{
+    font-family: 'Baskervville', serif  !important;
+    padding-left: 10px;
+    font-size: 1.7rem;
+}
 
 #about .container .card-container .left p{
     font-family: 'Montserrat', sans-serif !important;
@@ -476,6 +493,15 @@ to {background: url("bg4.jpg");}
     font-size: 1.1rem;
     line-height: 1.5;
     /*border-left: 1px solid gray;*/
+    color: rgb(99, 95, 95);
+    margin-bottom: 10px;
+}
+#about .container .card-container .card p{
+    font-family: 'Montserrat', sans-serif !important;
+    padding-left: 30px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    border-left: 1px solid gray;
     color: rgb(99, 95, 95);
     margin-bottom: 10px;
 }
@@ -974,11 +1000,35 @@ to {background: url("bg4.jpg");}
     #home .social-section .line{
         margin: 0 6px;
     }
+    #home .container .home-container .bottom-container div .line{
+        display: none;
+    }
+    #home .container .home-container .bottom-container .paraText{
+        margin-left: 0 !important;
+    }
     #home .social-section .socials li a{
         font-size: 0.8rem;
     }
     #about .container .about-container .heading2, #services .container .services-container .heading2, #works .container .works-container .heading2{
         font-size: 2.3rem;
+    }
+    #services .container .services-container .heading2{
+        margin-bottom: 20px !important;
+    }
+    #contact .container .contact-container .heading2{
+        margin-bottom: 20px !important;
+    }
+    #contact .container .email-container{
+        margin-bottom: 40px !important;
+    }
+    #about .container .card-container{
+        padding-bottom: 0 !important;
+    }
+    #services .container .services-container{
+        padding: 0 20px !important;
+    }
+    #services{
+        padding: 50px 0 !important;
     }
     #works .container .corousel-heading{
         text-align: center;
